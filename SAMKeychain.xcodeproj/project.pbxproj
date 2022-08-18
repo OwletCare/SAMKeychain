@@ -71,17 +71,6 @@
 		21632DA11C925A3C00C40D7D /* SAMKeychainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAMKeychainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21632DBC1C925B1F00C40D7D /* SAMKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21632DD21C9282BD00C40D7D /* KeychainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainTests.swift; sourceTree = "<group>"; };
-		21B85B1E18EC9391009D2B98 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		21B85B2518EC9455009D2B98 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		21B85B2818EC9455009D2B98 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		21B85B2918EC9455009D2B98 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		21B85B2A18EC9455009D2B98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		21B85B6E18EC963A009D2B98 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		21CC42AA17DB874300201DDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		21CC42AC17DB874300201DDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		21CC42AE17DB874300201DDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		21CC42C317DB874300201DDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		21CC42F917DB87C300201DDC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E8A666341A844CC400287CA3 /* SAMKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A666551A844D3A00287CA3 /* SAMKeychainTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SAMKeychainTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8A6666F1A844E4100287CA3 /* SAMKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SAMKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,23 +154,12 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		21B85B2718EC9455009D2B98 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				21B85B2818EC9455009D2B98 /* AppKit.framework */,
-				21B85B2918EC9455009D2B98 /* CoreData.framework */,
-				21B85B2A18EC9455009D2B98 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
 		21CC429E17DB874300201DDC = {
 			isa = PBXGroup;
 			children = (
 				21632D781C92599100C40D7D /* Sources */,
 				21CC42D917DB877900201DDC /* Tests */,
 				21632D861C9259B400C40D7D /* Support */,
-				21CC42A917DB874300201DDC /* Frameworks */,
 				21CC42A817DB874300201DDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -199,22 +177,6 @@
 				21632DBC1C925B1F00C40D7D /* SAMKeychain.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		21CC42A917DB874300201DDC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				21B85B6E18EC963A009D2B98 /* Cocoa.framework */,
-				21B85B1E18EC9391009D2B98 /* Security.framework */,
-				21CC42F917DB87C300201DDC /* Security.framework */,
-				21CC42AA17DB874300201DDC /* Foundation.framework */,
-				21CC42AC17DB874300201DDC /* CoreGraphics.framework */,
-				21CC42AE17DB874300201DDC /* UIKit.framework */,
-				21CC42C317DB874300201DDC /* XCTest.framework */,
-				21B85B2518EC9455009D2B98 /* Cocoa.framework */,
-				21B85B2718EC9455009D2B98 /* Other Frameworks */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		21CC42D917DB877900201DDC /* Tests */ = {
@@ -431,6 +393,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
